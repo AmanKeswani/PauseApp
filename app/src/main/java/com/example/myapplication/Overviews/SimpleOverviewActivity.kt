@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import com.example.myapplication.HomePage
+import com.example.myapplication.LoginPage
 import com.example.myapplication.R
 
 class SimpleOverviewActivity : AppCompatActivity() {
@@ -30,7 +30,7 @@ class SimpleOverviewActivity : AppCompatActivity() {
                 ++iterator
             }
             else {
-                val intent = Intent(this, HomePage::class.java)
+                val intent = Intent(this, LoginPage::class.java)
                 startActivity(intent)
             }})
 
