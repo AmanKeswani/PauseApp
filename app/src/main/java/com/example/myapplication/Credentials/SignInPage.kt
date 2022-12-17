@@ -1,11 +1,12 @@
-package com.example.myapplication
+package com.example.myapplication.Credentials
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.myapplication.R
 
-class LoginPage : AppCompatActivity() {
+class SignInPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login_page)
+        setContentView(R.layout.activity_signin_page)
     }
 }

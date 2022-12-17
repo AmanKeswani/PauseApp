@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="20dp"
-    tools:context=".LoginPage">
+    tools:context=".Credentials.SignInPage">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -52,37 +52,80 @@
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email ID"
-
-                android:padding="8dp"
-                android:background="@drawable/border"
                 android:layout_margin="10dp"
+
+                android:inputType="textWebEmailAddress"
+
                 android:layout_marginBottom="30dp"
-                android:textSize="30sp"/>
+                android:background="@drawable/border"
+                android:hint="Email ID"
+                android:padding="8dp"
+                android:paddingStart="20dp"
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
-
-                android:padding="8dp"
-                android:background="@drawable/border"
                 android:layout_margin="10dp"
+
+                android:inputType="textPassword"
+
                 android:layout_marginBottom="30dp"
-                android:textSize="30sp"/>
+                android:background="@drawable/border"
+                android:hint="Password"
+                android:padding="8dp"
+                android:paddingStart="20dp"
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Confirm Password"
-
-                android:padding="8dp"
-                android:background="@drawable/border"
                 android:layout_margin="10dp"
+
+                android:inputType="textPassword"
+
                 android:layout_marginBottom="30dp"
-                android:textSize="30sp"/>
+                android:background="@drawable/border"
+                android:hint="Confirm Password"
+                android:padding="8dp"
+                android:paddingStart="20dp"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="SIGN IN"
+                    android:textSize="20sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="LOG IN"
+                    android:textSize="20sp"
+                    app:cornerRadius="20dp" />
+            </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
